@@ -73,31 +73,24 @@ El flujo de conexión incluye:
 
 **ADF**:
 
-Estadístico ADF: -5.998047758729853
+Estadístico ADF: -0.9859775017609876
 
-p-value: 1.6830908102268328e-07
+p-value: 0.7583442657569961
 
 **KPSS**:
 
-Estadístico KPSS: 7.643220143569327
+Estadístico KPSS: 5.823344046403847
 
-p-value: 0.01 
+p-value: 0.01
 
-### Gráfica ACF(Con fines de semana)
-
-![Gráfica ACF](Gráficas/ACF_C.jpg)
-
-### Gráfica PACF(Con fines de semana)
-
-![Gráfica ACF](Gráficas/PACF_C.jpg)
 
 ### Gráfica ACF(Sin fines de semana)
 
-![Gráfica ACF](Gráficas/ACF.jpeg)
+![Gráfica ACF](Gráficas/ACF.jpg)
 
 ### Gráfica PACF (sin fines de semana)
 
-![Gráfica ACF](Gráficas/PACF.jpeg)
+![Gráfica ACF](Gráficas/PACF.jpg)
 
 ---
 

@@ -46,7 +46,7 @@ La *Tasa de Interés Interbancaria de Equilibrio (TIIE)* es una tasa de referenc
 
 ---
 
-## 🔗 Conexión a la API de INEGI
+## 🔗 Conexión a la API de Banxico
 
 Se utilizó la API de BANXICO para descargar la serie *SF43783*.  
 El flujo de conexión incluye:

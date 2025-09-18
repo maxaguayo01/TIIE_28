@@ -41,12 +41,13 @@ La *Tasa de Interés Interbancaria de Equilibrio (TIIE)* es una tasa de referenc
 ## 📂 Estructura del Proyecto
 
 ├── TIIE_28.ipynb          # Notebook con el desarrollo completo
+
 ├── README.md              # Documento de explicación y resultados
 
 
 ---
 
-## 🔗 Conexión a la API de Banxico
+## 🔗 Conexión a la API de INEGI
 
 Se utilizó la API de BANXICO para descargar la serie *SF43783*.  
 El flujo de conexión incluye:
@@ -59,15 +60,23 @@ El flujo de conexión incluye:
 
 ## 🔍 Análisis Exploratorio
 
-1. *Visualización inicial* de la serie para identificar tendencias y estacionalidad.
-2. *Pruebas de estacionariedad:*
+1. Se realizarán dos distintos análisis, uno tomando en cuenta los fines de semana y no. 
+2. *Visualización inicial* de la serie para identificar tendencias y estacionalidad.
+3. *Pruebas de estacionariedad:*
    - ADF (Augmented Dickey-Fuller)
    - KPSS (Kwiatkowski–Phillips–Schmidt–Shin)
-3. *Gráficas ACF y PACF* para definir órdenes iniciales de:
+4. *Gráficas ACF y PACF* para definir órdenes iniciales de:
    - (p, d, q) → Componente ARIMA
    - (P, D, Q, s) → Componente estacional
 
-> *Nota:* Aquí se deben incluir imágenes y explicar las decisiones tomadas.
+## Gráficas
+
+### Gráfica ACF(Sin fines de semana)
+
+![Gráfica ACF](Gráficas/ACF.jpg)
+
+### Gráfica PACF (sin fines de semana)
+![Gráfica ACF](Gráficas/PACF.jpg)
 
 ---
 
@@ -99,7 +108,7 @@ SARIMA(p,d,q)(P,D,Q,s)
 
 Gráfica generada con *Plotly* mostrando:
 - Datos históricos.
-- Predicciones para los próximos 12 meses.
+- Predicciones del modelo para la semana del 22-26 Sep 2025.
 
 > Aquí se incluye el gráfico interactivo.
 
@@ -126,13 +135,3 @@ En el Notebook sale como un error del 2.32%, es porque esta invertido el accurac
   - Volatilidad en el mercado.
   - Shocks externos (políticos, económicos, etc.).
   - Limitaciones del modelo SARIMA.
-
----
-
-## 🏆 Criterios de Evaluación
-
-| Criterio             | Descripción                                         | Peso |
-|----------------------|-----------------------------------------------------|------|
-| Ejecución del código | Flujo completo sin errores, gráficas y predicciones | 40%  |
-| Explicación          | Justificación de parámetros y claridad en README    | 50%  |
-| Desempeño MAPE       | Precisión en la predicción                          | 20%  |

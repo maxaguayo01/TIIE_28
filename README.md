@@ -69,7 +69,17 @@ El flujo de conexión incluye:
    - (p, d, q) → Componente ARIMA
    - (P, D, Q, s) → Componente estacional
 
-## Gráficas
+### ADF Y KPSS
+
+**ADF**:
+Estadístico ADF: -5.998047758729853
+
+p-value: 1.6830908102268328e-07
+
+**KPSS**:
+Estadístico KPSS: 7.643220143569327
+
+p-value: 0.01 
 
 ### Gráfica ACF(Sin fines de semana)
 

@@ -83,11 +83,20 @@ Estadístico KPSS: 7.643220143569327
 
 p-value: 0.01 
 
+### Gráfica ACF(Con fines de semana)
+
+![Gráfica ACF](Gráficas/ACF_C.jpeg)
+
+### Gráfica PACF(Con fines de semana)
+
+![Gráfica ACF](Gráficas/PACF_C.jpeg)
+
 ### Gráfica ACF(Sin fines de semana)
 
 ![Gráfica ACF](Gráficas/ACF.jpeg)
 
 ### Gráfica PACF (sin fines de semana)
+
 ![Gráfica ACF](Gráficas/PACF.jpeg)
 
 ---

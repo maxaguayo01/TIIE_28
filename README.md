@@ -85,11 +85,11 @@ p-value: 0.01
 
 ### Gráfica ACF(Con fines de semana)
 
-![Gráfica ACF](Gráficas/ACF_C.jpeg)
+![Gráfica ACF](Gráficas/ACF_C.jpg)
 
 ### Gráfica PACF(Con fines de semana)
 
-![Gráfica ACF](Gráficas/PACF_C.jpeg)
+![Gráfica ACF](Gráficas/PACF_C.jpg)
 
 ### Gráfica ACF(Sin fines de semana)
 

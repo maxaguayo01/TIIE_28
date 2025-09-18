@@ -39,11 +39,10 @@ La *Tasa de Interés Interbancaria de Equilibrio (TIIE)* es una tasa de referenc
 * *TIIE de Fondeo*: Es una versión más reciente, publicada diariamente, que también sirve como referencia para las operaciones pasivas (captación) de las instituciones financieras.
 
 ## 📂 Estructura del Proyecto
-
+```
 ├── TIIE_28.ipynb          # Notebook con el desarrollo completo
 ├── README.md              # Documento de explicación y resultados
-
-
+```
 ---
 
 ## 🔗 Conexión a la API de Banxico

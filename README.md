@@ -73,10 +73,10 @@ El flujo de conexión incluye:
 
 ### Gráfica ACF(Sin fines de semana)
 
-![Gráfica ACF](Gráficas/ACF.jpg)
+![Gráfica ACF](Gráficas/ACF.jpeg)
 
 ### Gráfica PACF (sin fines de semana)
-![Gráfica ACF](Gráficas/PACF.jpg)
+![Gráfica ACF](Gráficas/PACF.jpeg)
 
 ---
 

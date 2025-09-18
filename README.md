@@ -60,7 +60,7 @@ El flujo de conexión incluye:
 
 ## 🔍 Análisis Exploratorio
 
-1. Se realizarán dos distintos análisis, uno tomando en cuenta los fines de semana y no. 
+1. Se realizarán dos distintos análisis, uno poniendo el ultimo valor del viernes en el sabado y domingo, y otro quitando los fines de semana.  
 2. *Visualización inicial* de la serie para identificar tendencias y estacionalidad.
 3. *Pruebas de estacionariedad:*
    - ADF (Augmented Dickey-Fuller)

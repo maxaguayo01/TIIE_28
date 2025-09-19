@@ -1,6 +1,17 @@
 # Primer examen parcial
 ## Tasa de interés interbancaria de equilibrio (TIIE 28 días)
 
+- [📝 Descripción del Proyecto](#-descripción-del-proyecto)
+- [¿Qué es TIIE?](#qué-es-tiie)
+- [📂 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🔗 Conexión a la API de BANXICO](#-conexión-a-la-api-de-banxico)
+- [🔍 Análisis Exploratorio](#-análisis-exploratorio)
+- [🤖 Modelo SARIMA](#-modelo-sarima)
+- [📊 Resultados de la Predicción](#-resultados-de-la-predicción)
+- [🧮 Evaluación del Modelo](#-evaluación-del-modelo)
+- [📌 Conclusiones](#-conclusiones)
+- [🏆 Criterios de Evaluación](#-criterios-de-evaluación)
+
 ## 📝 Descripción del Proyecto
 Este proyecto tiene como objetivo objetivo es realizar un modelo SARIMA que se capaz de *predecir el comportamiento de una serie de tiempo* a 28 días.
 Se trabajará con un indicador financiero publicado por Banxico que refleja el costo del dinero en el mercado interbancario.
@@ -155,3 +166,13 @@ Gráfica generada con *Plotly* mostrando:
 - La amplitud de los intervalos de confianza (~0.2 puntos) indica que el pronóstico es relativamente preciso y confiable para el corto plazo y cumple con el objetivo de anticipar movimientos diarios de la TIIE.
 
 - La leve pendiente negativa refleja una posible desaceleración marginal en el indicador durante esa semana.
+
+---
+
+## 🏆 Criterios de Evaluación
+
+| Criterio             | Descripción                                         | Peso |
+|----------------------|-----------------------------------------------------|------|
+| Ejecución del código | Flujo completo sin errores, gráficas y predicciones | 30%  |
+| Explicación          | Justificación de parámetros y claridad en README    | 40%  |
+| Desempeño MAPE       | Precisión en la predicción                          | 30%  |

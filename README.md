@@ -97,8 +97,11 @@ p-value: 0.01
 ## 🤖 Modelo SARIMA
 
 Se utilizó un modelo SARIMA porque:
-- La serie presenta *estacionalidad mensual clara*.
-- Permite capturar tanto patrones *cíclicos* como *tendenciales*.
+
+- Se utilizó un modelo **SARIMA** porque permite capturar tanto la **dependencia temporal** (componentes autorregresivos y de medias móviles) como la **estacionalidad** presente en la serie. A diferencia de un modelo ARIMA tradicional, SARIMA incluye parámetros que modelan los patrones repetitivos observados en la frecuencia de días hábiles.  
+
+- Tras realizar pruebas de estacionariedad (ADF y KPSS) y analizar las funciones de autocorrelación (ACF) y autocorrelación parcial (PACF), se seleccionaron los parámetros que mejor representan la dinámica de la serie. Este modelo fue entrenado sobre los datos históricos obtenidos de la API de Banxico y posteriormente utilizado para generar las predicciones de la semana del **22 al 26 de septiembre de 2025**.
+
 
 *Ecuación general:*
 \[

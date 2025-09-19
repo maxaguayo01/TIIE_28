@@ -166,6 +166,21 @@ Gráfica generada con *Plotly* mostrando:
 
 - La leve pendiente negativa refleja una posible desaceleración marginal en el indicador durante esa semana.
 
+El proyecto permitió aplicar modelos de series de tiempo para pronosticar la TIIE a 28 días, explorando tanto enfoques no estacionales (ARIMA) como estacionales (SARIMA).
+A través del análisis de la serie y la selección de parámetros óptimos, se identificó que un modelo SARIMA(1,1,1)(0,0,1,5) ofrecía el mejor desempeño, con errores bajos (MAE ≈ 0.68, RMSE ≈ 0.82, MAPE ≈ 8%) y predicciones coherentes con la tendencia observada.
+
+El proyecto también permitió:
+
+Validar la importancia de diferenciar la serie para eliminar tendencias y lograr estacionariedad.
+
+Reconocer la limitación de modelos simples frente a cambios abruptos en la tasa.
+
+Generar pronósticos precisos a corto plazo, con intervalos de confianza que reflejan incertidumbre razonable.
+
+En general, se demuestra que los modelos SARIMA son herramientas efectivas para análisis financiero de series temporales, ofreciendo soporte tanto para predicciones como para la comprensión del comportamiento histórico de la TIIE.
+
+Los errores en las predicciones pueden explicarse por factores externos y volatilidad inherente a la serie. La TIIE 28 días puede verse afectada por decisiones de política monetaria, cambios económicos inesperados o eventos financieros globales, generando picos o caídas abruptas que el modelo SARIMA, basado en patrones históricos, no siempre puede capturar con exactitud. Por ello, aunque el pronóstico sigue la tendencia general, puede subestimar o sobrestimar movimientos bruscos de corto plazo.
+
 ---
 
 ## 🏆 Criterios de Evaluación

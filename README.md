@@ -145,7 +145,7 @@ MAPE = \frac{100\%}{n} \sum_{t=1}^{n} \left| \frac{y_t - \hat{y}_t}{y_t} \right|
 |-----------|-------|
 | MAPE (%)  | 7.98% |
 
-En el Notebook sale como un error del 2.32%, es porque esta invertido el accuracy es el 97.7%
+
 ---
 
 ## 📌 Conclusiones

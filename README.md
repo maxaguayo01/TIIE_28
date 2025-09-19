@@ -106,15 +106,17 @@ SARIMA(p,d,q)(P,D,Q,s)
 \]
 
 *Parámetros seleccionados:*
+
 | Parámetro | Valor | Justificación |
-|------------|-------|---------------|
-| p          | 1     | Basado en PACF |
-| d          | 1     | Basado en pruebas ADF/KPSS |
-| q          | 1     | Basado en ACF |
-| P          | 0     | Estacionalidad detectada |
-| D          | 1     | Estacionalidad y KPSS |
-| Q          | 1     | Basado en ACF estacional |
-| s          | 12    | Mensualidad |
+|-----------|-------|---------------|
+| p         | 1     | Basado en PACF (rezago significativo) |
+| d         | 1     | Serie no estacionaria según ADF/KPSS, se aplicó una diferenciación |
+| q         | 1     | Basado en ACF (rezago significativo) |
+| P         | 0     | No se detectaron rezagos AR estacionales |
+| D         | 0     | No se requirió diferenciación estacional según KPSS |
+| Q         | 1     | Basado en ACF estacional |
+| s         | 5     | Estacionalidad semanal de 5 días hábiles |
+
 
 ---
 
@@ -138,7 +140,7 @@ MAPE = \frac{100\%}{n} \sum_{t=1}^{n} \left| \frac{y_t - \hat{y}_t}{y_t} \right|
 
 | Métrica  | Valor |
 |-----------|-------|
-| MAPE (%)  | 2.32% |
+| MAPE (%)  | 7.98% |
 
 En el Notebook sale como un error del 2.32%, es porque esta invertido el accuracy es el 97.7%
 ---

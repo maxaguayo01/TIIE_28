@@ -53,7 +53,7 @@ Se utilizó la API de BANXICO para descargar la serie *SF43783*.
 El flujo de conexión incluye:
 
 1. Conexión vía requests utilizando el token proporcionado por BANXICO.
-2. Procesamiento de la respuesta JSON para convertirla en un DataFrame.
+2. Procesamiento de datos.
 3. Limpieza y preparación de la serie para el modelo.
 
 ---
@@ -84,11 +84,11 @@ Estadístico KPSS: 5.823344046403847
 p-value: 0.01
 
 
-### Gráfica ACF(Sin fines de semana)
+### Gráfica ACF
 
 ![Gráfica ACF](Gráficas/ACF.jpg)
 
-### Gráfica PACF (sin fines de semana)
+### Gráfica PACF 
 
 ![Gráfica ACF](Gráficas/PACF.jpg)
 
@@ -126,20 +126,21 @@ SARIMA(p,d,q)(P,D,Q,s)
 ## 📊 Resultados de la Predicción
 
 Gráfica generada con *Plotly* mostrando:
-- Datos históricos.
 - Predicciones del modelo para la semana del 22-26 Sep 2025.
 
-> Aquí se incluye el gráfico interactivo.
+### Gráfico interactivo septiembre 2025
+
+![Gráfico interactivo septiembre 2025](Gráficas/Sep_2025.jpg)
+
+### Gráfico interactivo TIIE 28 días 22-26 Septiembre 2025
+
+![Gráfico interactivo TIIE_28 días 22-26sep](Gráficas/TIIE_22-26.jpg)
+
+*Podrás interactuar con los gráficos mediante el código, se adjuntan imágenes como prueba*
 
 ---
 
 ## 🧮 Evaluación del Modelo
-
-Se calculó el *MAPE (Mean Absolute Percentage Error)* utilizando los últimos 12 valores como datos de validación:
-
-\[
-MAPE = \frac{100\%}{n} \sum_{t=1}^{n} \left| \frac{y_t - \hat{y}_t}{y_t} \right|
-\]
 
 | Métrica  | Valor |
 |-----------|-------|
@@ -149,8 +150,8 @@ MAPE = \frac{100\%}{n} \sum_{t=1}^{n} \left| \frac{y_t - \hat{y}_t}{y_t} \right|
 ---
 
 ## 📌 Conclusiones
-- Resumen de la calidad del modelo.
-- Posibles causas de error, como:
-  - Volatilidad en el mercado.
-  - Shocks externos (políticos, económicos, etc.).
-  - Limitaciones del modelo SARIMA.
+- El modelo sugiere que la TIIE se mantendrá estable alrededor de 8.0%, sin cambios abruptos.
+
+- La amplitud de los intervalos de confianza (~0.2 puntos) indica que el pronóstico es relativamente preciso y confiable para el corto plazo y cumple con el objetivo de anticipar movimientos diarios de la TIIE.
+
+- La leve pendiente negativa refleja una posible desaceleración marginal en el indicador durante esa semana.
